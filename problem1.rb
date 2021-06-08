@@ -13,22 +13,22 @@
 
 def crepe_check(recipe)
   index = 0
-  # while index < recipe.length
+  while index < recipe.length
     if recipe[index] == "crepe"
       return true
     end
     index +=1
-  # end
+  end
 end
 
 def french_check(language)
   index = 0
-  # while index < language.length
+  while index < language.length
     if language[index] == "french"
       return true
     end
     index +=1
-  # end
+  end
 end
 
 
@@ -41,9 +41,3 @@ elsif crepe_check(recipe_names) == true || french_check(language_names) == true
   p "Should marry"
   
 end
-
-# index = 0
-# while index < 11
-#   p index
-#   index +=1
-# end
