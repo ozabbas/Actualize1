@@ -1,5 +1,5 @@
 class Employee
-  
+
   def initialize(input_first_name, input_last_name, input_active, input_salary)
     @first_name = input_first_name
     @last_name = input_last_name
@@ -11,7 +11,17 @@ class Employee
   p "#{@first_name} #{@last_name} makes $#{@salary} per year"
   end
 
+  def give_annual_raise
+    @salary = @salary * 1.05
+  end
+
 end
 
 employee1 = Employee.new("Majora", "Carter", true, 50000)
 employee1.print_info
+p "giving raise..."
+employee1.give_annual_raise
+employee1.print_info
+
+employee2 = Employee.new("Danilo", "Campos", false, 90000)
+employee2.print_info
