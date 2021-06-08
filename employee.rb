@@ -15,6 +15,15 @@ class Employee
     @salary = @salary * 1.05
   end
 
+   #reader/getter
+  def first_name
+    @first_name
+  end
+
+  def first_name=(input_first_name)
+    @first_name = input_first_name
+  end
+
 end
 
 employee1 = Employee.new("Majora", "Carter", true, 50000)
@@ -25,3 +34,7 @@ employee1.print_info
 
 employee2 = Employee.new("Danilo", "Campos", false, 90000)
 employee2.print_info
+
+p employee1.first_name
+employee1.first_name=("Jaime")
+p employee1.first_name
