@@ -51,6 +51,9 @@
 
 class StoreItems
 
+  attr_reader :item_type, :item_year, :item_color
+  attr_writer :item_type, :item_year, :item_color
+
   def initialize(input_options)
     @item_type = input_options[:item_type]
     @item_year = input_options[:item_year]
@@ -61,25 +64,29 @@ class StoreItems
     p "This is a #{@item_type} from the year #{@item_year} and is the color #{@item_color}."
   end
 
-  def item_type
-    @item_type
-  end
+  # def item_type
+  #   @item_type
+  # end
 
-  def item_type=(input_item_type)
-    @item_type = input_item_type
-  end
+  # def item_type=(input_item_type)
+  #   @item_type = input_item_type
+  # end
 
-  def item_year
-    @item_year
-  end
+  # def item_year
+  #   @item_year
+  # end
 
-  def item_year=(input_item_year)
-    @item_year = input_item_year
-  end
+  # def item_year=(input_item_year)
+  #   @item_year = input_item_year
+  # end
   
-  def item_color=(input_item_color)
-    @item_color = input_item_color
-  end
+  # def item_color
+  #   @item_color
+  # end
+
+  # def item_color=(input_item_color)
+  #   @item_color = input_item_color
+  # end
 
 
 end
