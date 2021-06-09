@@ -20,6 +20,7 @@ class Employee
     @first_name
   end
 
+  #writer/setter
   def first_name=(input_first_name)
     @first_name = input_first_name
   end
