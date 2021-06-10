@@ -1,5 +1,8 @@
 class Employee
 
+  attr_reader :first_name, :last_name, :salary, :active
+  attr_writer :first_name
+  
   def initialize(input_first_name, input_last_name, input_active, input_salary)
     @first_name = input_first_name
     @last_name = input_last_name
@@ -39,3 +42,16 @@ employee2.print_info
 p employee1.first_name
 employee1.first_name=("Jaime")
 p employee1.first_name
+
+class Manager < Employee
+  def send_report
+    p "sending the report..."
+    # some logic will go here
+    p "totally sent the report"
+  end
+end
+
+manager = Manager.new(first_name: "Manny", last_name: "Manhauser", active: true, salary: 100000)
+
+manager.print_info
+manager.send_report
